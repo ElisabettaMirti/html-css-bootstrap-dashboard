@@ -1,0 +1,21 @@
+header{
+    height: 60px;
+    background-color: #f8f9fa;
+}
+
+header ul{
+    width: 10%;
+}
+
+.profile{
+    color: #ff8f00;
+}
+
+.my_bg-white{
+    background-color: white;
+}
+
+.my_font-dark{
+    color: #5b5858;
+}
+
