@@ -1,14 +1,5 @@
-header{
-    height: 60px;
-    background-color: #f8f9fa;
-}
-
-header ul{
-    width: 10%;
-}
-
-.profile{
-    color: #ff8f00;
+.my_bg-gray{
+    background-color: #e5e5e5;
 }
 
 .my_bg-white{
@@ -19,3 +10,68 @@ header ul{
     color: #5b5858;
 }
 
+.my_font-white{
+    color: white;
+}
+
+
+
+/* HEADER */
+
+header{
+    height: 60px;
+    background-color: #f8f9fa;
+}
+
+
+
+header ul{
+    width: 10%;
+}
+
+#logo-mobile{
+    height: 45px;
+}
+
+.profile{
+    color: #ff8f00;
+}
+
+
+
+/* ASIDE */
+
+aside{
+    width: 60px;
+    height: calc(100vh - 60px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+}
+
+
+
+
+
+
+
+
+
+/* MAIN */
+
+main{
+    height: calc(100vh - 60px);
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 992px) {
+
+    aside{
+        width: 150px;
+    }
+}
