@@ -1,9 +1,18 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+
 .my_bg-gray{
     background-color: #e5e5e5;
 }
 
 .my_bg-white{
     background-color: white;
+}
+
+.my_bg-blue{
+    background-color: #165bba;
 }
 
 .my_font-dark{
