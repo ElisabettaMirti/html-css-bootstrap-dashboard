@@ -74,6 +74,7 @@ main{
     max-width: calc(100vw - 60px);
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: #f8f9fa;
 }
 
 #m-top{
@@ -103,6 +104,13 @@ span.class-avatar{
 }
 
 span.class-avatar>img{
+    width: 100%;
+}
+
+
+/* STATISTICS */
+
+section.stats img{
     width: 100%;
 }
 
