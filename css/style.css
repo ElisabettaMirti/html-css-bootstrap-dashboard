@@ -74,10 +74,28 @@ main{
     width: calc(100vw - 60px);
 }
 
+#m-top{
+    margin-top: 2px;
+}
+
+#super-plus{
+    font-size: 50px;
+}
 
 
 
+/* NEXT CLASSES */
 
+.list-group-item-action:hover{
+    color: black;
+    background-color: #ececec;
+}
+
+span.edit-opt{
+
+    color: #6c757d;
+
+}
 
 /* MEDIA QUERIES */
 
