@@ -92,10 +92,20 @@ main{
 }
 
 span.edit-opt{
-
     color: #6c757d;
-
 }
+
+span.class-avatar{
+    display: inline-block;
+    width: 30px;
+}
+
+span.class-avatar>img{
+    width: 100%;
+}
+
+
+
 
 /* MEDIA QUERIES */
 
