@@ -55,6 +55,10 @@ aside{
     background-color: #051e34;
 }
 
+aside li:hover{
+    background-color: #445665;
+}
+
 
 /* SECTION TOP */
 
