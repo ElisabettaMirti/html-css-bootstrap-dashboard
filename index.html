@@ -17,6 +17,9 @@
     <title>Bootstrap 2</title>
 </head>
 <body>
+
+    <!-- HEADER -->
+
     <header class="container-fluid p-0 d-flex align-items-center">
         <nav class="navbar navbar-expand-lg navbar-light my_bg-white w-100 px-3">
             <div class="logo">
@@ -49,7 +52,11 @@
     </header>
 
 
+
 <div class="d-flex">
+
+    <!-- NAVBAR LATERALE -->
+
     <aside class="d-flex flex-column justify-content-between">
         <nav class="navbar navbar-dark my_font-white py-4">
             <ul class="navbar-nav mx-auto mb-2">
@@ -77,6 +84,9 @@
         
     </aside>
 
+
+    <!-- MAIN CONTENT -->
+
     <main class="container-fluid px-0">
         <div class="container-fluid px-0">
             <div class="row">
@@ -87,9 +97,13 @@
                                 <div class="col-12 col-md-4 col-lg-3 order-md-last d-flex align-items-center justify-content-md-center py-3 py-md-0" id="new-student">
                                     <p class="d-inline my-0 me-4">Nuovo studente</p>
                                     <span>
-                                        <i class="fa-regular fa-square-plus" id="super-plus"></i>
+                                        <button class="btn btn-outline-light my_font-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNewStudent" aria-controls="offcanvasNewStudent">
+                                            +
+                                        </button>                                        
                                     </span>
                                 </div>
+
+                                
 
                                 <div class="col-12 col-md-4 col-lg-6 order-md-first" id="badge-link">
                                     <h1 class="d-inline">Boolean</h1>
@@ -127,11 +141,84 @@
                             </div>
                         </div>    
                     </section>
+
+                    <!-- OFFCANVAS -->
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNewStudent" aria-labelledby="offcanvasNewStudentLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNewStudentLabel">Inserisci un nuovo studente</h5>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form>
+                                <div class="mb-3 container-fluid px-0">
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <label for="Name" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="Name" aria-describedby="NameStudent">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="Surname" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="SurnameStudent">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="EmailStudent" class="form-label">Email address</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="email" class="form-control" id="EmailStudent" aria-label="Email" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="PasswordStudent" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="PasswordStudent">                                        
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <label for="Address" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="Address">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="City" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="City">
+                                        </div>
+                                        <div class="col-4 mb-3">
+                                            <label for="Nation" class="form-label">Stato</label>
+                                            <select class="form-select" id="Nation">
+                                                <option selected>Scegli...</option>
+                                                <option value="1">Italia</option>
+                                                <option value="2">Italia ma bella</option>
+                                                <option value="3">Italia ma è solo Roma</option>
+                                            </select>                                            
+                                        </div>
+                                        <div class="col-2 mb-3">
+                                            <label for="CAP" class="form-label">CAP</label>
+                                            <input type="text" class="form-control" id="CAP">
+                                        </div>
+                                        <div class="col-12 mb-5">
+                                            <label for="PhotoStudent" class="form-label">Foto</label>
+                                            <div class="input-group">
+                                                <button class="btn btn-outline-secondary my_bg-gray my_font-black" type="button" id="button-addon1">Scegli file</button>
+                                                <input type="text" class="form-control" placeholder="Nessun file selezionato" aria-label="Nessun file selezionato" aria-describedby="button-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="CheckNewStudent">
+                                            <label class="form-check-label" for="CheckNewStudent">
+                                                Seleziona per proseguire
+                                            </label>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-primary">Salva</button>
+                                            <button type="button" class="btn btn-warning">Svuota</button>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="row px-2">         
 
+            <div class="row px-2">   
                 <div class="col-12 col-lg-8 gy-3">
                     <section class="next-class pb-3">
                         <div class="card">
